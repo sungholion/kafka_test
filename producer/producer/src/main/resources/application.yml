@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: producer_application
+
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092 # Kafka cluster에 대한 초기 연결에 사용할 호스트 : 포트 목록
+
+topic:
+  name: my-topic

@@ -1,0 +1,12 @@
+server:
+  port: 8091
+
+spring:
+  application:
+    name: consumer_application01
+
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092 # Kafka cluster에 대한 초기 연결에 사용할 호스트 : 포트 목록
+      group-id: consumer_group01 # Group id
+      auto-offset-reset: earliest # offset 이 없거나 더 이상 없는 경우 어떻게 처리 할지 전략 결정
